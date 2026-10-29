@@ -12,10 +12,5 @@ def show_todos():
         if not todo["completed"]:
             print(f'- {todo["title"]} [{todo["priority"]}]')
 
-    print("完了したTODO")
-    for todo in todos:
-        if todo["completed"]:
-            print(f'- {todo["title"]} [{todo["priority"]}]')
-
 
 show_todos()
