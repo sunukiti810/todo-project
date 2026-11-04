@@ -5,12 +5,14 @@ todos = [
 
 
 def show_todos():
-    print("優先度（高・中・低）")
-    
-    print("未完了のTODO")
+    print("TODO一覧")
+    print("状態と優先度")
+
+    print("すべてのTODO")
     for todo in todos:
-        if not todo["completed"]:
-            print(f'- {todo["title"]} [{todo["priority"]}]')
+        status = "[完了] " if todo["completed"] else ""
+        print(f'{status}{todo["title"]} [{todo["priority"]}]')
+
 
 
 show_todos()
